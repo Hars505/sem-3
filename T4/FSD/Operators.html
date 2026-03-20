@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <!-- 
+    Syntax 
+          funtion Username (para1,para2,...)
+          {
+            //FUNCTION BODY
+          }
+            2> FUNTION INVOCATION (calling)
+                I>  Funtion Triggered by an event
+                II> Function called explicity from code 
+                III> Automatically Executed(self involing)
+        1> Assigning a funtion to a variable
+        2> one function calls another funtion 
+    -->
+    <script>
+      // Automatically Executed(self involing)
+      (function () {
+        document.writeln("called <br>");
+      })();
+      // Funtion Triggered by an event
+      function showmsg() {
+        alert("Button clicked");
+      }
+      // Funtion called by explicity from code
+      function add(a, b) {
+        return a + b;
+      }
+      let result = add(5, 10);
+      document.writeln(result + "<br>");
+      function product(a, b) {
+        return a * b;
+      }
+      document.writeln(product(6, 10) + "<br>");
+
+      //  Assigning a funtion to a variable
+
+      var a = function (x, y) {
+        return x + y;
+      };
+      let c = a(3, 5);
+      document.writeln(c + "<br>");
+
+      // one function calls another function
+
+      function info(first, last) {
+        var full = first + " " + last;
+        return full;
+      }
+      function hello() {
+        var result2 = info("ABC", "DEF");
+        document.writeln(result2 + "<br>");
+      }
+    </script>
+  </head>
+  <body style="background-color: rgb(40, 40, 40); color: white">
+    <input type="button" value="click" onclick="showmsg()" />
+    <input type="button" value="info" onclick="hello()" />
+  </body>
+</html>

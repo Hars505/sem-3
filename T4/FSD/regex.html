@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!--
+                Regular Expression (REGEX) -> pattern of characters
+                syntax :
+                        /pattern (define start) /modifiers (define end of the pattern)
+                        test() ->>>>> called using pattern object & return true if string is a part of pattern
+                syntax :
+                        RegExpObj.test(string)
+                Modifiers : to perform case-insensitive & global Searches 
+                ---- String must contain "ABC" anywhere in Whole String 
+                ----------- should be in line(sequense) it is also case sensitive
+                 ------- if modifier 'i' is used it becomes case-insenstive
+        -->
+        <script>
+            function fun()
+            {
+                // pat=/abc/ // case sensitive should be in sequense
+                // pat=/abc/i // becomes case - insenstive
+                // pat=/[abc]/ // case sensitive but all letters if not required in senquence
+                // pat=/[^abc]/ // it should not be in entered value
+                // pat=/^A/i // should start with 'a' charcter also be case - insentive
+                // pat=/[0-9]/ // should be digit in Entered value
+                // pat=/[^0-9]/ // only digits are not allowed if wriiten with alphabet it is allowed
+                // pat=/(x|y)/ // should contain x or y or both else error
+                // pat=/Bo*/ // Should be start with B followed by o and o can be present 0 or more times
+                // pat=/t$/ // should end with t
+                // pat=/^\d{10}$/ // should contain 10 digits only
+                // pat=/^[A-Za-z]+$/ // should conatin only alphabets
+                pat=/^[A-Za-z]{4}$/ // should conatin only 4 alphabets
+                u=document.getElementById("t1").value;
+                if(pat.test(u))
+                {
+                    alert("Perfect")
+                }
+                else
+                {
+                    alert("Not Perfect")
+                }
+            }
+            // Must contian 'a' or 'b' or 'c' or any combination of this letters
+            // Not any of charchters "a" or "b" or "c" string the content  a,b or c or any combination of these three leters but any other alphabhet 
+            // digit must be present in string 
+            // string must start with a
+        </script>
+    </head>
+    <body style="background-color: rgb(62, 62, 62); text-align: center;">
+        <form>
+            <input type="text" id="t1">
+            <input type="submit" onclick="fun()">
+    </body>
+</html>

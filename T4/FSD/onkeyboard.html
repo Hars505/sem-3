@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!-- 
+                ----- ON KEYBOARD -----
+                1> onkeydown
+                2> onkeyup
+        -->
+  </head>
+  <body onkeydown="f1(this)" onkeyup="f2(this)">
+    <script>
+      function f1(id) {
+        id.bgColor = "blue";
+      }
+      function f2(id) {
+        id.bgColor = "red";
+      }
+    </script>
+  </body>
+</html>

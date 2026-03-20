@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!--
+                -- Ways To access from element
+                    1> Using document Forms
+                        obj=document.forms["forms_name"]["Element_name"].value
+                    2> Using form and element name directly
+                        obj=document.form_name.element_name.value
+                    3> Using getElementById
+                        obj=document.getElementById.("id").value;        
+        -->
+        <script>
+            function fun()
+            {
+                // var obj=document.forms["f1"]["t1"].value 
+                // var obj=document.f1.t1.value
+                var obj=document.getElementById("i1").value;
+                 alert(obj); 
+            }
+           
+        </script>
+    </head>
+    <body style="background-color: rgb(62, 62, 62); text-align: center;">
+        <form name="f1" onsubmit="fun()">
+            <input type="text" name="t1" id="i1">
+            <input type="submit">
+        </form>
+    </body>
+</html>

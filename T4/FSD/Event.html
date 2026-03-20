@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <!--
+     
+    -->
+  </head>
+  <body style="background-color: rgb(27, 76, 166); color: white" onkeypress="keyCheck(event)">
+    2-event type<br>
+    <script>
+        function check(e)
+        {
+            alert(e.type)
+        }
+    </script>
+    <button onclick="check(event)"> Click Here</button>
+    <br>
+    <br>
+    3-event key
+    <script>
+        function keyCheck(e)
+        {
+            alert("key Pressed "+e.keyCode);
+        }
+    </script><br>
+    Press Anywhere On Keyboard
+    <br>
+    <br>
+    4-event preventDefault()
+    <form onsubmit="stop(event)">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function stop(e)
+        {
+            e.preventDefault()
+            alert("Form Stopped")
+        }
+    </script>
+    <br>
+    <br>
+    addEventListner()
+    <br>
+    <button id="btn" >Click Me!!</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function() {alert("button Cliked")})
+    </script>
+  </body>
+</html>

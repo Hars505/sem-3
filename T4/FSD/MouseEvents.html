@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <!--
+     --- MOUSE EVENTS ---
+     1> onclick
+     2> onmousedown
+     3> onmouseup
+     4> onmouseover
+     5> onmousout
+    -->
+  </head>
+  <body style="background-color: rgb(27, 76, 166); color: white">
+    <h1 onclick="alert('This page says Hello')">Hello</h1>
+    <div
+      onmousedown="mdown(this)"
+      onmouseup="
+    mup(this)"
+      style="
+        background-color: rgb(53, 41, 131);
+        width: 70px;
+        height: 30px;
+        padding: 20px;
+      "
+    >
+      click
+    </div>
+    <script>
+      function mdown(e) {
+        e.style.backgroundColor = "rgb(28,140,154)";
+        e.innerHTML = "Hello";
+      }
+      function mup(e) {
+        e.style.backgroundColor = "rgb(50,130,120)";
+        e.innerHTML = "Hello";
+      }
+    </script>
+    <div
+      onmouseover="mover(this)"
+      onmouseout="
+    mout(this)"
+      style="
+        background-color: rgb(28, 146, 193);
+        width: 70px;
+        height: 30px;
+        padding: 20px;
+      "
+    >
+      hover
+    </div>
+    <script>
+      function mover(e) {
+        e.style.color = "cyan";
+        e.innerHTML = "Hello";
+      }
+      function mout(e) {
+        e.style.color = "black";
+        e.innerHTML = "Hi";
+      }
+    </script>
+  </body>
+</html>

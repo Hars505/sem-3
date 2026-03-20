@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!-- Async  --- > used for Function --- > Always return promise
+            wait  --- > pause exceution until Promise resolved --- > retrive value of promise 
+            Syntax :
+            let result = await promise;
+                async function fname(){
+                    await promise
+                }
+     -->
+    <script>
+        async function fetchdata()
+        {
+            return new Promise((resolve,reject)=>
+            {
+                setTimeout(()=>
+                {
+                    let success=true;
+                    if(success)
+                    {
+                        resolve("Data fetched successfully")
+                    }
+                    else
+                    {
+                        reject("Error in Fetching data")
+                    }
+                });
+            })
+        }
+        async function getdata()
+        {
+            try
+            {
+                let result=await fetchdata();
+                console.log(result);
+            }
+            catch(error)
+            {
+                console.log(error);
+            }
+        }
+        getdata();
+    </script>
+  </head>
+  <body style="background-color: rgb(62, 62, 62); text-align: center">
+    <h1 style="color: blanchedalmond;"> Async & wait </h1>
+  </body>
+</html>

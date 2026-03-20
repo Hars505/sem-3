@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!--
+                Write JavaScript that handles following mouse event.
+                1. If mouse left button pressed on browser it displayed message “Left Clicked”.
+                2. If mouse right button pressed on browser it displayed message “Right Clicked”
+                -->
+  </head>
+  <body style="background-color: rgb(27, 76, 166); color: rgb(247, 255, 0)">
+    <script>
+      document.onmousedown = function (e) {
+        if ((e.button == 0)) {
+          alert("Left Clicked");
+        }
+        if ((e.button == 2)) {
+          alert("Right Clicked");
+        }
+        if ((e.button == 3)) {
+          alert("BackWard Button Clicked");
+        }
+        if ((e.button == 4)) {
+          alert("ForWard Button Clicked");
+        }
+      }
+    </script>
+  </body>
+</html>

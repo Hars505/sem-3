@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <!--
+     --- MOUSE EVENTS ---
+     1> oninput
+     2> onchange
+     3> onfocus
+     4> onblur
+     5> onsubmit
+    -->
+  </head>
+  <body style="background-color: rgb(15, 70, 170); color: white">
+    Oninput -
+    <input
+      type="text"
+      oninput="this.value=this.value.toUpperCase()"
+      style="background-color: rgb(196, 222, 138)"
+    /><br />
+    onchange -
+    <input
+      type="text"
+      onchange="this.value=this.value.toUpperCase()"
+      style="background-color: rgb(182, 138, 222)"
+    /><br />
+    onfocus -
+    <input
+      type="text"
+      onfocus="this.value=this.value.toUpperCase()"
+      style="background-color: rgb(222, 138, 163)"
+    /><br />
+    onblur -
+    <input
+      type="text"
+      onblur="this.value=this.value.toUpperCase()"
+      style="background-color: rgb(134, 195, 77)"
+    /><br />
+    <form action="#" onsubmit="my()">
+      Name:<input type="text" name="fname" id="fname" />
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      function my() {
+        a = document.getElementById("fname").value;
+        alert("The form is submitted !!  Welcome " + a);
+      }
+    </script>
+  </body>
+</html>

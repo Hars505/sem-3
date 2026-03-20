@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <!--
+     INNER HTML
+     --- <p id="p1"> </p>
+     <script>
+        document.getElementById("p1").innerHTML="<b>HI</b>"
+     </script>   
+    -->
+  </head>
+  <body style="background-color: rgb(38, 76, 145); color: white">
+    <p>
+        Hello
+    </p>
+    <p> Good Morning </p>
+    <script>
+      var x = document.querySelectorAll("p");
+      //    x[0].style.color="white";
+      //    x[1].style.color="black";
+      for(var i =0 ;i<x.length;i++)
+      {
+        x[i].style.color="black"
+      }
+    </script>
+    <p id="p1"> </p>
+    <img id="i1" width="350px" height="200px">
+    <script>
+        document.getElementById("p1").innerHTML="<b>HI</b>"
+        document.getElementById("i1").setAttribute("src","1.jpg")
+    </script>
+    <p id="p2" title="Demo">Hello</p>
+    <script>
+        alert(document.getElementById("p2").getAttribute("title"))
+        alert(document.getElementById("p2").removeAttribute("title"))
+     </script>
+  </body>
+</html>

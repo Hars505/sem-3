@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <!-- 
+            Loops
+    -->
+    <script>
+        let x = 10
+        if(x%2==0)
+        {
+          console.log("Even")
+        }
+        else if(x%2==1)
+        {
+          console.log("odd")
+        }
+        else
+        {
+          console.log("Error")
+        }
+        let role = "admin"
+        switch(role)
+        {
+            case "admin":
+                console.log("Full")
+                break;
+            case "viewer":
+                console.log("half-Full")
+                break;
+            default:
+                console.log("Error")
+                break;
+        }
+        for(let i = 1; i<=5 ; i++)
+        {
+            console.log(i)
+        }
+        let Fruits = ["apple","mango","kiwi"]
+        for (let fruit of Fruits)
+        {
+            console.log(fruit)
+        }
+        let user = {name:"XYZ" , age:20 , city:"ahemdabad"}
+        for (let info in user)
+        {
+            console.log(info+" = "+user[info])
+        }
+        let student = ["ABC","DEF","GHI"]
+        for (let i in student)
+        {
+            console.log(parseInt(i)+1)
+            console.log(student[i])
+        }
+    </script>
+  </head>
+  <body style="background-color: rgb(40, 40, 40); color: white"></body>
+</html>

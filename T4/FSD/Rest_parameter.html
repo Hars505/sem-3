@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    Rest PARAMETER
+    - it is improved way  -> to handle function parameter
+    -> using root para ->>
+                            "Function can be called with any number of arguments no 
+                            matter how it was defined"
+
+            SYNTAX ->>>
+                        function funtion_name(...Paramters)
+                        {
+                            statement
+                        }
+    -->
+    <script>
+      // ---- without rest ----
+      function xfun(a, b) {
+        console.log(a);
+        console.log(b);
+      }
+      xfun(1, 2, 3, 4, 5, 6);
+
+      // ---- with rest operator ----
+      function mfun(a, b, ...c) {
+        console.log(a);
+        console.log(b);
+        console.log(c);
+      }
+      mfun(1, 2, 3, 4, 5, 6);
+
+      // Test - Test - Test
+      function fun(a, b, ...c) {
+        console.log(`${a} ${b}`);
+        console.log(c);
+        console.log(c[0]);
+        console.log(c.length);
+        console.log(c.indexOf("pqr"));
+        console.log(c.indexOf("abc"));
+      }
+      fun("abc", "xyz", "pqr", "mno", "stu");
+    </script>
+  </head>
+  <body style="background-color: rgb(40, 40, 40); color: white"></body>
+</html>

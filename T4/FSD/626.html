@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    </head>
+    <body style="background-color: blanchedalmond; color: black;">
+        <div id = "d1" onmouseover="chbg(this)" onmouseout="chbg1(this)">
+            <button onclick="MY(this)">
+                Click ME!
+            </button>
+            <p id="d2"></p>
+        </div>
+        <script>
+            let x = 0;
+            function MY(e)
+            {
+                x++
+                document.getElementById("d2").textContent="x = "+x
+                console.log(x)
+                return x
+            }
+            function chbg(e)
+            {
+                e.style.backgroundColor="Yellow"
+            }
+            function chbg1(e)
+            {
+                e.style.backgroundColor="blanchedalmond"
+            }
+        </script>
+    </body>
+</html>

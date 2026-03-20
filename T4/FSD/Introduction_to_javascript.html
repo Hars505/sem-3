@@ -1,0 +1,111 @@
+<!-- JavaScript
+    -> Scripting Language
+    -> combine HTML and CSS with js
+    -> make web pages "alive" { interactive }
+    -> can be used on both client-side and server-side
+    -> Use Browser s DOM (Document Object Model)
+    -> Extenstion - .js
+     
+    There are 3 ways to include javascript in HTML
+    1. Inline JavaScript
+    2. Internal JavaScript
+    3. External JavaScript
+    -----    Primary syntax and tag of JavaScript
+    <script>
+        // JavaScript code goes here for inline and internal
+    </script>
+
+      ----- Primary methods to display output in JavaScript
+    1> document.write("Hello World!");
+    2> document.writeln("Hello World!");
+    3> console.log();
+
+    Variables in JavaScript
+    -> Containers to store data values
+    -> Store reusable data values
+    -> for assigning a variable we use "=" operator
+
+    identifiers / variable naming rules
+    1. Should be starts with a letter (A-Z or a-z), underscore ("_") or dollar sign ("$")
+    2. After first character we can use digits (0-9)
+    3. It is case sensitive
+    4. Should not used reserved keywords
+    5. should not contain spaces
+     
+    ways to declare a variable in JavaScript
+    1. implicit (auto) declaration : 
+         -> 
+         -> e.g.: x=10,y=20,z=x+y
+    2. using var keyword :
+         -> it gives funtion scope
+         -> can be accessible {outside the block}
+         -> remebers the last assigned value
+         -> e.g.: var x=10; var y=20
+    3. using let keyword :
+         -> imporved version of var
+         -> variable has block scope
+         -> it can not be accessible {outside the block}
+         -> e.g.: let x=10; let y=20
+    4. using const keyword :
+         -> e.g.: const x=10; const y=20
+    
+    scope - local and global
+    -> Local scope : variable declare inside a block and accessible only inside that block
+    -> global scope : variable declare outside a block and accessible anywhere in the program
+
+
+-->
+<html>
+  <head>
+    <title>Introduction to JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: rgb(20, 103, 130);
+        color: white;
+      }
+    </style>
+    <script>
+      //Inline javascript
+      document.write("Hello World!");
+      console.log("Hello World!");
+      document.writeln("Hi");
+      document.writeln("Hello");
+
+      // funtion making
+       var a = 50;
+       function myFuntion() {
+        // local scope
+         let a = 10;
+         document.writeln(" <br> The value of a is: " + a);
+       }
+       console.log("a : " + a);
+       myFuntion();
+
+      //  new funtion
+       function f(){
+         let a=5;
+         if (a>4){
+           let b = 1;
+           console.log("b :"+b);
+           document.writeln(" <br> The value of a is: " + a);
+         }
+         console.log("b : "+ b)
+       }
+       f();
+       // new 2 funtion
+       let a = 10;
+       let b = 20;
+       a = 10;
+       console.log(a)
+     //f   new 3 funtion
+      let a = 10;
+      function f() {
+        let a = 20;
+        console.log("a :" + a);
+      }
+      console.log("a :" + a);
+    </script>
+  </head>
+  <body></body>
+</html>

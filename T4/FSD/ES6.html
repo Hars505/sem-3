@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <!-- 
+    Syntax  function name = ( para1 , para2 , .... ) => Expression A.K.A. ES6 Function
+                para : listed in parenthesis
+                        if there is only one para. Paranthe can be omitted
+                Expression: After the (=>)Arrows , if there is single expression -> it is implicity returned
+                Examples : 1> Arrow function with Multiple para
+                           2> Arrow function with Single para
+                           3> Arrow function without para
+                           4> With body Block
+    -->
+    <script>
+      //  Arrow function with Multiple para
+      const add = ( a, b) => a + b;
+      console.log(add(5, 8));
+
+      //  Arrow function with Single para
+      //  ----- if there is only single para if you don't make paranthesis it will run there will be no error
+      const sqr = (x) => x * x;
+      console.log(sqr(5));
+
+      //  Arrow function without para
+      const sayHello = () => "Hello";
+      console.log(sayHello());
+
+      // With body Block
+      const Product = (a, b) => {
+        const result = a * b;
+        return result;
+      };
+      console.log(Product(2, 3));
+    </script>
+  </head>
+  <body style="background-color: rgb(40, 40, 40); color: white"></body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!--
+                ------------ validation OF EMail and it's Password--------------  
+                USer name must start with characters and conatin @ and end  with .com or .in or .org
+                Password must conatin at One upper case , one lowercase , digits and a special character and length must be greater than 8
+
+                ---  pat=/^\w+([.-]?\w+)*@\w+([.]?\w+)*(\.\w{2,3})+$/
+                alternative --- > /^\w+@\w+(\.\w{2,3})+$/
+    -->
+    <script>
+      function fun() {
+        var user = document.getElementById("i1").value.trim();
+        var pass = document.getElementById("i2").value;
+        pat = /^\w+([.-]?\w+)*@\w+([.]?\w+)*(\.\w{2,3})+$/;
+        if (pat.test(user)) {
+          alert("Valid Email");
+        }
+        if (pass.length < 7) {
+          alert("Not valid Password");
+        }
+      }
+    </script>
+  </head>
+  <body style="background-color: rgb(62, 62, 62); text-align: center">
+    <form name="f1" onsubmit="fun()">
+      UserName : <input type="text" name="t1" id="i1" /> <br />
+      password :
+      <input type="password" name="K2" id="i2" /><br />
+      <input type="submit" onclick="fun()" />
+    </form>
+  </body>
+</html>

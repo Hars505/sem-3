@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!-- Validate user name and obj1 user must not start with special chars and digits and both must not be less than 4 chars-->
+    <script>
+      function fun() {
+        var pat = /^[-@\d]/; // username must not start with -, @ or digit
+        var user = document.getElementById("i1").value.trim();
+        var pass = document.getElementById("i2").value;
+        if (!user || !pass) {
+          alert("Fields must not be blank");
+          return false;
+        }
+        if (user.length < 4) {
+          alert("Username must be at least 4 characters");
+          return false;
+        }
+        if (pat.test(user)) {
+          alert("Username must not start with -, @, or a digit");
+          return false;
+        }
+        if (pass.length < 8 || pass.length > 12) {
+          alert("Password length must be between 8 and 12 characters");
+          return false;
+        }
+        alert("obj : " + user);
+        return true;
+      }
+    </script>
+  </head>
+  <body style="background-color: rgb(62, 62, 62); text-align: center">
+    <form name="f1" onsubmit="fun()">
+      UserName : <input type="text" name="t1" id="i1" /> <br />
+      password :
+      <input type="password" name="K2" id="i2" />
+      <input type="submit" onclick="fun()" />
+    </form>
+  </body>
+</html>

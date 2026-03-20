@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <!-- 
+        --Data Types
+         1> Primitive datatype
+            -> Number
+            -> boolean
+            -> object
+            -> undefined
+            -> String
+         2> Non-Primitive Datatypes
+            -> object - store data in key : value pair
+            -> array - store like list in python key = array
+        -->
+    <script>
+      var a = undefined;
+      var b = "text";
+      var c = true;
+      var d = 5;
+      var e = null;
+      const person = { firstname: "ABC", lastname: "XYZ" };
+      const Fruits= ["apple","mango","kiwi"]
+      document.writeln("--  "+typeof a + "<br>--");
+      document.writeln(typeof b + "<br>--");
+      document.writeln(typeof c + "<br>--");
+      document.writeln(typeof d + "<br>--");
+      document.writeln(typeof e + "<br> - - - ");
+      document.writeln(person.firstname);
+      document.writeln(person["lastname"]+"<br>");
+      document.writeln("Fruit on 0th index "+Fruits[0]+"<br>")
+      document.writeln("Fruit array length "+Fruits.length+"<br>")
+      document.writeln("Fruitrs are : "+Fruits)
+    </script>
+  </head>
+  <body style="background-color: rgb(40, 40, 40); color: white"></body>
+</html>

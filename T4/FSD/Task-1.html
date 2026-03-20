@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!-- WRITE A HTML AND CSS FILE TO PERFORM FOLLOWING TASK :- 
+                1> ADD 3 TEXT INPUT FIELD
+                2> IN FIRST TEXT FIELD CONVERT THE ENTER TEXT INTO UPPER CASE WHEN THE VALUE OF THE FIELD CHANGE USING ONCHANGE EVENT
+                3> IN THE SECOND TEXT FIELD CHANGE THE BACKGROUND COLOUR TO YELLOW WHEN FIELD GET FOCUSED USING ONFOCUS EVENT
+                   CHANGE THE TEXT COLOUR TO BLUE USING ONINPUT EVENT
+                4> IN THE TEXT FIELD CONVERT THE ENTERED TEXT INTO LOWER CASE WHEN THE FIELD LOSS THE FOCUS USING ONBLUR EVENT 
+        -->
+  </head>
+  <body style="background-color: rgb(27, 76, 166); color: white">
+    FIRST INPUT FIELD -
+    <input oninput="this.value=this.value.toUpperCase()" /><br />
+    SECOND INPUT FIELD -
+    <input
+      onfocus="MY(this)"
+      oninput="this.value=this.value.toUpperCase()"
+    /><br />
+    THIRD INPUT FIELD -
+    <input onblur="this.value=this.value.toLowerCase()" /><br />
+    <script>
+      function MY(e) {
+        e.style.backgroundColor = "yellow";
+      }
+    </script>
+  </body>
+</html>

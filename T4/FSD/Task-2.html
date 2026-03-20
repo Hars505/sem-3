@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <!-- IF MOUSE IS OVER HEADING IT SHOULD TURN YELLOW
+         IF MOUSE GOES OUT THEN IT SHOULD TURN BLACK
+         IF FIND TIME BUTTON IS CHICLKED THEN IT SHOW DATE AND TIME INFORMATION
+         IF BUTTON NAMED RED IS CLICKED THEN BACKGROUND COLOUR SHOULD TURN RED
+         IF BUTTON NAMED GREEN IS CLICKED THEN BACK GROUND COLOR SHOULD TURN GREEN
+        -->
+  </head>
+  <body style="background-color: rgb(27, 76, 166); color: white">
+    <h1
+      style="color: rgb(125, 159, 198); text-align: center; padding-top: 50px"
+      onmouseover="MY(this)"
+      onmouseout="MY1(this)"
+    >
+      H'S PIZZAS
+    </h1>
+    <script>
+      function MY(e) {
+        e.style.color = "Yellow";
+      }
+      function MY1(e) {
+        e.style.color = "Black";
+      }
+      function NEW() {
+        document.getElementById("p2").textContent = new Date().toString();
+      }
+      function bgRed()
+      {
+        document.body.style.backgroundColor="red";
+      }
+      function bgGreen()
+      {
+        document.body.style.backgroundColor="green";
+      }
+      function bgBlue()
+      {
+        document.body.style.backgroundColor="Blue";
+      }
+    </script>
+    <button
+      onclick="NEW()"
+      style="color: rgb(0, 0, 0); -ms-flex-align: center"
+    >
+      FIND ME
+    </button>
+    <p id="p2"></p>
+    <button onclick="bgRed()" style="color: rgb(0, 0, 0); -ms-flex-align: center">RED</button>
+    <button onclick="bgGreen()" style="color: rgb(0, 0, 0); -ms-flex-align: center">GREEN</button>
+    <button onclick="bgBlue()" style="color: rgb(0, 0, 0); -ms-flex-align: center">Blue</button>
+  </body>
+</html>
