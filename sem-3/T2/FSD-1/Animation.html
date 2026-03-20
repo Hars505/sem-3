@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Animation examples</title>
+        <style>
+            .fade-in {
+                animation: fadeInAnimation 3s ease-in forwards;
+            }
+            @keyframes fadeInAnimation {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .container {
+                width: 800px;
+                height: 100px;
+                margin-top: 40px;
+                gap: 15px;
+                border: 1px solid #ccc;
+                background-color: #3d94ae;
+            }
+            .slide-in {
+                animation: slideInAnimation 2s ease-out forwards;
+            }
+            @keyframes slideInAnimation {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(0); }
+            }
+            @keyframes anm {
+                from {background-color: rgb(17, 83, 154);}
+                to {background-color: rgb(73, 131, 206);}
+            }
+            div {
+                width: 300px;
+                height: 150px;
+                background-color: rgb(73, 131, 206);
+                text-align: center;
+                animation-name: anm;
+                animation-duration: 1s;
+                animation-delay: 1s;
+                animation-timing-function: ease-in-out;
+                background: linear-gradient(270deg,rgb(54, 141, 222) 30%,rgb(96, 73, 172) 60%, rgb(69, 10, 145)) 40%;
+            }
+            .radial{
+                background: radial-gradient(circle, rgb(50, 160, 204), rgb(25, 68, 142), rgb(142, 55, 219));
+            }
+            .conic{
+                background: conic-gradient(rgb(54, 141, 222) 20%, rgb(83, 87, 201)40%, rgb(109, 68, 163)30%);
+            }
+            .tab{
+                background: linear-gradient(to right,violet,indigo,blue, green,yellow,orange,red);
+            }
+            </style>
+    </head>
+    <body style="background: linear-gradient(to right,rgb(54, 141, 222),rgb(83, 87, 201), rgb(69, 10, 145));">
+        <div class="fade-in">This div fades in</div>
+        <br>
+        <div class="slide-in">This div slides in from the left</div>
+        <br>
+        <div class="radial">This div changes color using keyframes animation</div>
+        <div> ABC </div>
+        <div class="conic"> this is an examples of animation linear linear-gradient</div>
+        <div class="container tab"> This is an example of animation using tab color</div>
+    </body>
+</html>

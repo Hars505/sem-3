@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Grid Layout Example</title>
+        <style>
+            p::first-line {
+                color: rgb(56, 56, 172);
+                font-weight: bold;
+            }
+            P::first-letter {
+                font-size: 300%;
+                color: rgb(32, 87, 114);
+            }
+            P::before {
+                content: "NOTE: ";
+                color: rgb(54, 152, 66);
+            }
+            P::after {
+                content: " END OF PARAGRAPH.👍👍👌";
+                color: rgb(190, 0, 0);
+            }
+            body {
+                font-size: medium;
+            }
+            ul li::marker {
+                color: rgb(18, 86, 163);
+                font-size: 150%;
+                font-weight: bold;
+                
+            }
+            p::selection {
+                background-color: rgb(255, 255, 0);
+                color: rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+    <body style="background-color: bisque;">
+        <p>
+            This is an example paragraph to demonstrate the first-line pseudo-element in CSS. The first line of this paragraph will be styled differently from the rest of the text, making it stand out with a blue color and bold font weight.
+            ALSO, THIS IS AN EXAMPLE PARAGRAPH TO DEMONSTRATE THE ::FIRST-LINE PSEUDO-ELEMENT IN CSS. THE FIRST LINE OF THIS PARAGRAPH WILL BE STYLED DIFFERENTLY FROM THE REST OF THE TEXT, MAKING IT STAND OUT WITH A BLUE COLOR AND BOLD FONT WEIGHT.
+        </p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>CSS Background Example</title>
+    <style>
+      .box {
+        background-color: rgb(114, 126, 255);
+        border: 2px solid gray;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+      }
+      .inline div {
+        display: inline-block;
+        background-color: rgb(95, 174, 200);
+        border: 2px solid rgb(7, 0, 130);
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+      }
+      .block div {
+        display: block;
+        background-color: rgb(157, 83, 196);
+        border: 2px solid rgb(114, 79, 114);
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+      }
+      .inline-block div {
+        display: inline;
+        background-color: rgb(255, 120, 120);
+        border: 2px solid rgb(182, 82, 82);
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+      }
+      .none div {
+        display: none;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        background-color: rgb(80, 99, 203);
+        padding: 15px;
+      }
+      .item {
+        background-color: rgb(200, 103, 249);
+        border: 2px solid rgb(48, 1, 57);
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        width: 200px;
+      }
+      .container1 {
+        margin-top: 50px;
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        position: relative;
+        padding: 15px;
+      }
+      .container2 {
+        margin-top: 30px;
+        height: 300px;
+        border: 2px solid black;
+        padding: 15px;
+        width: 300px;
+      }
+      .test {
+        margin-left: 20px;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+        text-align: center;
+      }
+      #test1 {
+        background-color: aqua;
+        text-align: center;
+        padding: 15px;
+      }
+      #test2 {
+        background-color: coral;
+        position: relative;
+        top: -5px;
+        left: -5px;
+        z-index: 1;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body style="background-color: bisque">
+    <div class="box">This is a box with blue background and gray border.</div>
+    <br />
+    <div class="inline">
+      <div>Inline Block 1</div>
+      <div>Inline Block 2</div>
+      <div>Inline Block 3</div>
+    </div>
+    <br />
+    <div class="block">
+      <div>Block 1</div>
+      <div>Block 2</div>
+      <div>Block 3</div>
+    </div>
+    <br />
+    <div class="inline-block">
+      <div>Inline 1</div>
+      <div>Inline 2</div>
+      <div>Inline 3</div>
+    </div>
+    <br />
+    <div class="none">
+      <div>This content is hidden.</div>
+    </div>
+
+    <h1>FLEX BOX EXAMPLE</h1>
+    <div class="container">
+      <div class="item">Flex Item 1</div>
+      <div class="item">Flex Item 2</div>
+      <div class="item">Flex Item 3</div>
+    </div>
+    <div class="container1">
+      <div id="test1" class="test">Test 1</div>
+      <div id="test2" class="test">Test 2</div>
+    </div>
+    <div class="container2">
+      <div id="test1" class="test">Test 1</div>
+      <div id="test2" class="test">Test 2</div>
+    </div>
+  </body>
+</html>

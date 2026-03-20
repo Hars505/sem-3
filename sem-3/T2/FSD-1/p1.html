@@ -1,0 +1,56 @@
+<!--DESIGN A WEBPAGE THAT INCLUDES A BUTTON THAT CHANGES IT COLOUR WHEN HOVERED AND WHEN CLICKED IT CHANGE IT COLOUR A TEXT INPUT FIELD ALSO CHANGES background-color WHEN FOCUSED.
+A CHECKBOX THAT CHANGE COLOUR OF ITS LABEL WHEN CHECKED.
+AND MAKE THE LABEL BOLD WHEN RIGHT CLICKED.
+AND UNORDERED LIST THE 2ND LIST ITEM IS STYLED DIFFERENTLY WITH RED TEXT COLOUR and BOlD FONT WEIGHT.
+ONE OF THE LIST ITEM HAS cLASS NAME SPECIAL AND ALL OTHER LIST OF ITEMS HAVE BLUE Background AND ITALiC FONT STYLE.-->
+<html>
+    <head>
+        <title>Interactive Form Example</title>
+        <style>
+            .hover-button {
+                background-color: lightblue;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .hover-button:hover {
+                background-color: orange;
+            }
+            .hover-button:active {
+                background-color: green;
+            }
+            .focus-input:focus {
+                background-color: lightyellow;
+            }
+            .checkbox-label:checked + label {
+                color: purple;
+            }
+            .checkbox-label:context-menu + label {
+                font-weight: bold;
+            }
+            ul li:nth-child(2) {
+                color: red;
+                font-weight: bold;
+            }
+            ul li:not(.special) {
+                background-color: lightblue;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="hover-button">Click Me!</button>
+        <br /><br />
+        <input type="text" class="focus-input" placeholder="Focus on me!" autofocus/>
+        <br /><br />
+        <input type="checkbox" id="checkbox1" class="checkbox-label" />
+        <label for="checkbox1">I AGREE</label>
+        <br /><br />
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2 (Styled Differently)</li>
+            <li class="special">Special Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </body>

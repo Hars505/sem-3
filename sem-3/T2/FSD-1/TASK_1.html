@@ -1,0 +1,36 @@
+<!-- Write down html css code that will display an image (2.jpg) and hide an image
+(1.jpg) if viewport is maximum 650px width if viewport is more than 650px than
+display image (1.jpg) and hide image (2.jpg) -->
+<html>
+  <head>
+    <title>Responsive Image Display</title>
+    <style>
+      body {
+        background: lightblue;
+      }
+      .image2 {
+        display: block;
+      }
+      .image1 {
+        display: none;
+      }
+      @media (max-width: 900px) {
+        .image2 {
+          display: none;
+        }
+        .image1 {
+          display: block;
+        }
+      }
+      @media not (orientation: landscape) {
+        body {
+          background-color: lightcoral;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="1.jpg" alt="Image 1" class="image1" />
+    <img src="2.jpg" alt="Image 2" class="image2" />
+  </body>
+</html>

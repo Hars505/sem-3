@@ -1,0 +1,46 @@
+/* Write the FOLLOWINg in seprate the css file and also show to link this css file to html
+1. the heading should have normal font style and font sixe should be 120% 
+2. define the clas airel for paragraph which define font family airel and font style BOLD having 3 cm spacing for paragraph initializaton
+3. Apply background colour orange and apply img 1.jpg and and it should be repetaded horizontally  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 120%;
+}
+.ariel {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-indent: 3cm;
+}
+body {
+  background-color: orange;
+  background-image: url("IMG..jpg");
+  background-repeat: repeat-x;
+}
+.box {
+  width: 300px;
+  height: 120px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 15px gray;
+  background-color: yellow;
+  text-align: center;
+  box-sizing: content-box;
+}
+.box2 {
+  width: 300px;
+  height: 120px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 15px gray;
+  background-color: yellow;
+  text-align: center;
+  box-sizing: border-box;
+}

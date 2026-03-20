@@ -1,0 +1,47 @@
+<!--regestration form name password phone-address gendwe sumit and return button
+1> while chick on named text background colour input feild change to light green
+2> while hovering on password and phone  number text font size of it increase repectively
+3> while clicking on gender background colour of it change to light blue
+4>both reset and submit button should be bold and italic while hoveriung-->
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            #name-input:focus {
+                font-size: 22px;
+                background-color: rgba(109, 203, 109, 0.663);
+            }
+            #name-input,input :focus {
+                background-color: rgb(255, 255, 255);
+            }
+            .password-input:hover {
+                font-size: 22px;
+            }
+            .phone-input:hover {
+                font-size: 22px;
+            }
+            .gender-input:checked + .gender
+            {
+                color: rgb(0, 184, 246);
+            }
+            .button:hover,::selection {
+                font-weight: bold;
+                font-style: italic;
+                color: aqua;
+            } 
+        </style>
+    </head>
+    <body style="background-color: bisque;">
+        <h2>Registration Form</h2>
+        <form>
+            Name: <input type="text" id="name-input" autofocus/><br /><br />
+            Password: <input type="password" id="name-input" /><br /><br />
+            Phone Number: <input type="text" id="name-input" /><br /><br>
+            gender:
+            <input type="radio" id="Male" name="gender" class="gender-input" ><a class="gender">Male</a>
+            <input type="radio" id="Female" name="gender" class="gender-input"><a class="gender">Female</a><br /><br />
+            <input type="reset" value="Reset" class="button" />
+            <input type="submit" value="Submit" class="button" />
+        </form>
+    </body>
+</html>
