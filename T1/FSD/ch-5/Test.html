@@ -1,0 +1,41 @@
+<!--write html css code to add some text on image in bottom left corner and top right corner also use opacity propertie of image ta make an image transparent-->
+<html>
+  <head>
+    <title>Image Text Overlay Example</title>
+    <style>
+      .image-container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        padding: 0.8%;
+        margin: auto;
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: rgb(139, 187, 255);
+        padding: 5px;
+      }
+      .top-right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: rgb(0, 0, 0);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body style="background-color: bisque">
+    <div class="image-container">
+      <img src="ai-generated-7483596_960_720.jpg" alt="Sample Image" />
+      <div class="bottom-left">Waterfalls</div>
+      <div class="top-right">Garden</div>
+    </div>
+  </body>
+</html>

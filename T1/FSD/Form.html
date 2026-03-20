@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body bgcolor="#C4A484">
+    <form
+      action="submit.php"
+      method="post"
+      align="left"
+      style="font-size: 20px"
+    >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 align="center" style="color: blue">Registration Form</h1>
+    <hr label="fill details" style="border: 2px solid black" />
+    <fieldset style="width: 20%; background-color: #F5F5DC">
+        <legend>Information</legend>
+      Name:
+      <input
+        type="text"
+        placeholder="Enter Name"
+        name="User name"
+        id="10125"
+        maxlength="25"
+        required
+        autofocus
+      /><br /><br />
+      Email:
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        minlength="10"
+        maxlength="50"
+        required
+      /><br /><br />
+      Password:
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password Eg-NSVU1165"
+        maxlength="25"
+        minlength="8"
+        required 
+        autocomplete=""
+      /><br /><br />
+      Age:
+      <input
+        type="number"
+        placeholder="Enter Age"
+        name="age"
+        min="18"
+        max="100"
+        step="2"
+      /><br /><br />
+      Phone:
+      <input
+        type="tel"
+        placeholder="Enter Phone Number"
+        name="phone"
+        required
+      /><br /><br />
+      Hobbies:
+      <input type="checkbox" name="hobby" value="cricket" checked />Cricket
+      <input type="checkbox" name="hobby" value="football" />Football
+      <input type="checkbox" name="hobby" value="Music" />Music
+      <input type="checkbox" name="hobby" value="Dance" />Dance
+      <input type="checkbox" name="hobby" value="reading" />Reading<br />
+      <br />
+      Gender <input type="radio" name="Gender" value="Male" checked /> MALE
+      <input type="radio" name="Gender" value="Female" /> FEMALE
+      <br />
+      <br />
+      Address <textarea type="text" name="Add" rows="5" cols="30" readonly>Enter Address Here</textarea>
+      <input type="hidden" name="hid" value="12458" />
+        <br /><br />
+      
+      <br /><br />
+      Age
+      <input
+        type="range"
+        name="age"
+        id="age"
+        min="18"
+        max="50"
+        step="2"
+        value=" "
+        oninput="num.value=this.value"
+      />
+      <br /><br />
+      Your Age <input type="text" id="num" disabled /> <br /><br />
+      <input type="color" name="favcolor" id="favcolor" value="#ff0000" />
+      <button
+        type="reset"
+        value="Reset Form"
+        onclick="alert('Form Resseted Successfully')"
+      >
+        Reset
+      </button>
+      <input
+        type="file"
+        name="resume"
+        id="rs"
+        accept=".doc,.docx,.pdf,.jpeg,.jpg/*"
+        multiple
+      /><br /><br />
+      <input
+        type="date"
+        name="bday"
+        id="bday"
+        value="2024-06-15"
+        min="1990-01-01"
+        max="2024-12-31"
+      />
+        <br /><br />
+        <input list="browsers" name="browser" id="brow" />
+        <datalist id="browsers">
+          <option value="Chrome" />
+          <option value="Firefox" />     
+          <option value="Safari" />
+          <option value="Opera" />
+          <option value="Edge" />
+        </datalist>
+      <label> Department</label>
+      <select name="Department" id="dept">
+        <option value=" " selected disabled hidden>Select Department</option>
+        <optgroup label="Engineering">
+        <option value="CSE">CSE</option>  
+        <option value="ECE">ECE</option>
+        <option value="IT">IT</option>
+        <option value="MECH">MECH</option>
+        <option value="AIML">AIML</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="CHEMICAL">CHEMICAL</option>
+        </optgroup>
+        <optgroup label="Sciences">
+        <option value="PHYSICS">PHYSICS</option>
+        <option value="CHEMISTRY">CHEMISTRY</option>    
+        <option value="MATHS">MATHS</option>
+        </optgroup>
+      <br /><br />
+      </select>
+    </fieldset>
+      <button
+        type="submit"
+        value="submit Form"
+        onclick="alert('Form Submitted Successfully')">
+        Submit</button><br><br>
+    </form>
+  </body>
+</html>

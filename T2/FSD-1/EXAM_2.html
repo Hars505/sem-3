@@ -1,0 +1,61 @@
+<!--Write HTML & CSS script to design a signup form having fields like Username,
+password, choices of sports like Cricket, Hockey, Badminton & Tennis. Include gender
+fieid, submit and reset buttons.
+Follow below requirements:
+i) While hovering username & password, its background should turn yellow color and
+pink color respectively.
+ii) While clicking sports and gender fields, text should turn to red color.
+iii) Both submit and reset button text should turn blue, while hovering.
+iv) Use appropriate selectors.-->
+<html>
+  <head>
+    <title>Signup Form</title>
+    <style>
+      input[type="text"]:hover {
+        background-color: yellow;
+      }
+      input[type="password"]:hover {
+        background-color: rgb(182, 48, 71);
+      }
+      select:focus {
+        color: rgb(182, 21, 21);
+      }
+      .gender-input:checked + .gender {
+        color: rgb(253, 16, 12);
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        color: rgb(20, 20, 161);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Signup Form</h2>
+    <form>
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="sports">Choose your sport:</label><br />
+      <select id="sports" name="sports">
+        <option value="cricket">Cricket</option>
+        <option value="hockey">Hockey</option>
+        <option value="badminton">Badminton</option>
+        <option value="tennis">Tennis</option></select
+      ><br /><br />
+      <label>Gender:</label><br />
+      <input type="radio" id="Male" name="gender" class="gender-input" /><a
+        class="gender"
+        >Male</a
+      >
+      <input type="radio" id="Female" name="gender" class="gender-input" /><a
+        class="gender"
+        >Female</a
+      ><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

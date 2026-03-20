@@ -1,0 +1,49 @@
+h1 {
+  font-size: 36px;
+  color: #1f020c;
+  text-align: center;
+  background: #c79750;
+}
+p {
+  font-size: 16px;
+  color: #024179;
+  background-color: bisque;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* text-shadow examples */
+.text-shadow-examples {
+  margin: 30px;
+  padding: 12px;
+}
+.subtle {
+  font-size: 18px;
+  color: #024179;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.glow {
+  font-size: 22px;
+  color: #0af;
+  text-shadow: 0 0 8px rgba(0, 150, 255, 0.8);
+}
+.neon {
+  font-size: 48px;
+  color: #39f;
+  text-shadow: 0 0 2px #9af, 0 0 6px #39f, 0 0 12px #39f,
+    0 0 20px rgba(57, 153, 255, 0.6);
+  text-align: center;
+}
+.outline {
+  color: white;
+  background: #333;
+  padding: 6px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  display: inline-block;
+}
+.depth {
+  color: #222;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #bbb, 0 3px 0 #aaa,
+    0 4px 6px rgba(0, 0, 0, 0.25);
+}

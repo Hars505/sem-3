@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>CSS Transition Example</title>
+    <style>
+      .container {
+        width: 80%;
+        margin-top: 30px;
+        gap: 15px;
+        border: 1px solid #ccc;
+        background-color: #3d94ae;
+      }
+      .box {
+        width: 600px;
+        height: 160px;
+        margin: 30px auto;
+        padding: 30px;
+        border: 2px solid #000;
+        background-color: rgb(193, 91, 186);
+        text-align: center;
+        box-sizing: content-box;
+        
+      }
+      .box:hover {
+        background-color: rgb(91, 186, 150);
+        width: 320px;
+      }
+      .box2 {
+        width: 300px;
+        height: 120px;
+        margin: 30px auto;
+        padding: 30px;
+        border: 2px solid #000;
+        background-color: rgb(12, 96, 170);
+      }
+      .box2:hover {
+        background-color: rgb(210, 191, 25);
+        width: 600px;
+        transition-duration: 2000ms;
+      }
+      .linear {
+        transition-timing-function: linear;
+      }
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+      .ease {
+        transition-timing-function: All ease;
+        width: 400px;
+        height: 160px;
+        transition-duration: 2s;
+      }
+      .ease-out {
+        transition-timing-function: ease-out;
+        width: 400px;
+        height: 160px;
+        transition-duration:2s ;
+      }
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body style="background-color: blanchedalmond">
+    <p>
+      This paragraph demonstrates the use of CSS transition properties within a
+      VSCode environment.
+    </p>
+    <p class="box ease">
+      This highlighted paragraph changes background color on hover.
+    </p>
+    <p>Another paragraph to illustrate the CSS transition effects applied</p>
+    <p class="box2 ease-out">
+      Final highlighted paragraph that also changes background color on hover.
+    </p>
+  </body>
+</html>
